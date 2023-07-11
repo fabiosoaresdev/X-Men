@@ -1,109 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto X-Men</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X-Men</title>
-    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
-
-<body>
-    <header class="cabecalho"></header>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="https://www.linkedin.com/in/f%C3%A1bio-soares-859229277/" target="_blank"><img src="src/imagens/logoLinkedin.png
+        " alt="logoLinkedin" title="Clique aqui para visitar meu Linkedin" width="40px"></a>
+      <img class="logo" src="./src/imagens/logo.svg" alt="Logo x-men">
+      <a href="https://github.com/fabiosoaresdev" target="_blank"><img src="src/imagens/logoGithub.png
+        " alt="logoGitHub" title="Clique aqui para visitar meu GitHub" width="40px"></a>
+    </header>
 
     <main class="selecao-de-personagens">
-        <selection class="personagens">
-            <h1 class="titulo">Selecione um personagem</h1>
-            <ul class="lista-de-personagens">
-                <li class="personagem" id="Ciclope">
-                    <img src="src/images/card-ciclope.jpg" alt="Ciclope">
-                </li>
-                <li class="personagem" id="jean-grey">
-                    <img src="src/images/card-jean-grey.jpg" alt="jean grey">
-                </li>
-                <li class="personagem" id="lince-negra">
-                    <img src="src/images/card-lince-negra.jpg" alt="Lince Negra">
-                </li>
-                <li class="personagem" id="Magneto">
-                    <img src="src/images/card-magneto.jpg" alt="Magneto">
-                </li>
-                <li class="personagem" id="Noturno">
-                    <img src="src/images/card-noturno.jpg" alt="Noturno">
-                </li>
-                <li class="personagem" id="tempestade">
-                    <img src="src/images/card-tempestade.jpg" alt="Tempestade">
-                </li>
-                <li class="personagem" id="Vampira">
-                    <img src="src/images/card-vampira.jpg" alt="Vampira">
-                </li>
-                <li class="personagem" id="Wolverine">
-                    <img src="src/images/card-wolverine.jpg" alt="Wolverine">
-                </li>
-            </ul>
-        </selection>
-        <selection class="personagem-selecionado">
+      <section class="personagens">
+        <h1 class="titulo">Selecione um personagem</h1>
+        <ul class="lista-de-personagens">
+          <li class="personagem selecionado" id="ciclope" data-name="Ciclope" data-description="Ele tem o poder de disparar rajadas ópticas por um acidente que aconteceu com ele quando criança, mas não consegue controlá-los">
+            <img
+              src="./src/imagens/card-ciclope.jpg"
+              alt="Personagem Ciclope"
+            />
+          </li>
+          <li class="personagem" id="jean-grey" data-name="Jean Grey" data-description="Jean Grey é uma mutante nível ômega e o principal avatar da Força Fênix, no qual manifesta poderes cósmicos. A telepatia e telecinese">
+            <img
+              src="./src/imagens/card-jean-grey.jpg"
+              alt="Personagem Jean Grey"
+            />
+          </li>
 
-            <img src="src/images/card-ciclope.png" alt="Personagem Selecionado" class="personagem-grande">
+          <li class="personagem" id="lince-negra" data-name="Lince Negra" data-description="Ela tem o poder de atravessar matéria sólida,campos de energia,rajadas ópticas, continuando intacta,e também tem o poder de andar no ar">
+            <img
+              src="./src/imagens/card-lince-negra.jpg"
+              alt="Personagem Lince Negra"
+            />
+          </li>
 
-            <div class="informacoes-do-personagem">
-                <h2 class="nome-personagem" id="nome-personagem">Ciclope</h2>
-                <p class="descricao-personagem" id="descricao-personagem">Ciclope, também conhecido como Scott Summers, é um mutante com o poder de emitir poderosas rajadas ópticas de seus olhos. Essas rajadas são extremamente poderosas e podem causar danos significativos a qualquer coisa em seu caminho. No entanto, devido a um acidente traumático em sua infância, Ciclope não consegue controlar seus poderes adequadamente. Para evitar ferir os outros, ele usa um visor especial de quartzo-rubi que contém suas rajadas ópticas.</p>
-            </div>
+          <li class="personagem" id="tempestade" data-name="Tempestade" data-description="Tem o poder de controlar as forças da natureza, muito poderosa ela pode produzir raios, chuvas, gelos, ventos, neblina, entre outros efeitos">
+            <img
+              src="./src/imagens/card-tempestade.jpg"
+              alt="Personagem Tempestade"
+            />
+          </li>
 
-            <img src="src/images/card-jean-grey.png" alt="Personagem Selecionado" class="personagem-grande">
+          <li class="personagem" id="vampira" data-name="Vampira" data-description="Ela tem o poder de absorver a vitalidade e memória das pessoas que toca ou no caso dos mutantes os poderes e a memória, mas só temporariamente">
+            <img
+              src="./src/imagens/card-vampira.jpg"
+              alt="Personagem Vampira"
+            />
+          </li>
 
-            <div class="informacoes-do-personagem">
-                <h2 class="nome-personagem" id="nome-personagem">Jean Grey</h2>
-                <p class="descricao-personagem" id="descricao-personagem">Jean Grey é uma poderosa mutante dotada de habilidades telepáticas e telecinéticas. Ela possui uma conexão intrínseca com a Força Fênix, uma entidade cósmica de poder infinito. Apesar de seu imenso potencial, Jean luta para controlar seus poderes, especialmente quando a Força Fênix se manifesta. Sua luta interna entre a luz e a escuridão faz com que ela seja uma figura de grande poder e instabilidade, capaz de causar devastação se não conseguir dominar sua natureza avassaladora.</p>
-            </div>
+          <li class="personagem" id="wolverine" data-name="Wolverine" data-description="Poderes. Garras Metálicas. Fator de Cura Regenerativo, Super Agilidade.">
+            <img
+              src="./src/imagens/card-wolverine.jpg"
+              alt="Personagem Wolverine"
+            />
+          </li>
 
-            <img src="src/images/card-lince-negra.png" alt="Lince Negra" class="personagem-grande">
+          <li class="personagem" id="noturno" data-name="Noturno" data-description="Ele é um mutante que nasceu com cauda, orelhas pontudas e com o poder de se Teletransportar">
+            <img
+              src="./src/imagens/card-noturno.jpg"
+              alt="Personagem Noturno"
+            />
+          </li>
 
-            <div class="informacoes-do-personagem">
-                <h2 class="nome-personagem" id="nome-personagem">Lince Negra</h2>
-                <p class="descricao-personagem" id="descricao-personagem">Lince Negra é uma mutante ágil e furtiva, conhecida por sua excepcional destreza e agilidade felina. Ela possui garras retráteis afiadas e sentidos aguçados, incluindo visão noturna e audição amplificada. Ainda que suas habilidades físicas sejam impressionantes, Lince Negra luta para controlar seu lado animal e seus instintos predatórios, o que pode levá-la a agir impulsivamente. Sua natureza dual entre a selvageria e a humanidade faz com que ela esteja constantemente em conflito consigo mesma, buscando equilibrar sua ferocidade animal com seu senso de moralidade.</p>
-            </div>
+          <li class="personagem" id="magneto" data-name="Magneto" data-description="Ele tem o poder de magnetocinese, ou seja, controlar objetos de metal e criar campos magnéticos">
+            <img
+              src="./src/imagens/card-magneto.jpg"
+              alt="Personagem Magneto"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img
+          class="personagem-grande"
+          src="./src/imagens/card-ciclope.png"
+          alt="Personagem Selecionado"
+        />
 
-            <img src="src/images/card-magneto.png" alt="Magneto" class="personagem-grande">
-
-            <div class="informacoes-do-personagem" id="nome-personagem">
-                <h2 class="nome-personagem" id="nome-personagem">Magneto</h2>
-                <p class="descricao-personagem" id="descricao-personagem">Magneto é um poderoso mutante capaz de manipular e controlar campos magnéticos. Ele tem a capacidade de mover objetos metálicos com o poder de sua mente e gerar poderosas rajadas magnéticas. Como sobrevivente do Holocausto e testemunha da discriminação contra mutantes, Magneto desenvolveu uma visão radical de que os mutantes são superiores aos seres humanos e deve-se lutar pela supremacia mutante. Embora seja um líder carismático e determinado, Magneto muitas vezes luta para controlar sua raiva e impulsos de vingança, o que pode levá-lo a agir com extrema violência. Sua complexidade reside na sua visão distorcida de igualdade e justiça, colocando-o em constante conflito com os X-Men e outros defensores da coexistência pacífica entre mutantes e humanos.</p>
-            </div>
-            <img src="src/images/card-noturno.png" alt="Noturno" class="personagem-grande">
-
-            <div class="informacoes-do-personagem">
-                <h2 class="nome-personagem" id="nome-personagem">Noturno</h2>
-                <p class="descricao-personagem" id="descricao-personagem">Noturno, também conhecido como Kurt Wagner, é um mutante com habilidades de teletransporte e agilidade sobrehumana. Sua pele azul, olhos amarelos e cauda preênsil o distinguem visualmente. Ele pode se teletransportar instantaneamente de um local para outro, enquanto realiza acrobacias incríveis com sua agilidade excepcional. Embora sua aparência seja intimidadora para alguns, Noturno é um membro compassivo e de bom coração dos X-Men, lutando pela paz e justiça. Sua história é marcada por sua busca pessoal de aceitação e reconciliação com sua identidade mutante.</p>
-            </div>
-
-            <img src="src/images/card-tempestade.png" alt="Tempestade" class="personagem-grande">
-
-            <div class="informacoes-do-personagem">
-                <h2 class="nome-personagem" id="nome-personagem">Tempestade</h2>
-                <p class="descricao-personagem" id="descricao-personagem">Tempestade, também conhecida como Ororo Munroe, é uma mutante com o poder de controlar o clima. Ela possui a habilidade de manipular os elementos naturais, como vento, chuva, relâmpagos e até mesmo criar tempestades poderosas. Tempestade é capaz de canalizar sua energia e invocar trovões e relâmpagos com um simples gesto.</p>
-            </div>
-
-            <img src="src/images/card-vampira.png" alt="Vampira" class="personagem-grande">
-
-            <div class="informacoes-do-personagem">
-                <h2 class="nome-personagem" id="nome-personagem">Vampira</h2>
-                <p class="descricao-personagem" id="descricao-personagem">Vampira, também conhecida como Anna Marie, é uma mutante com a habilidade de absorver a energia vital e os poderes de outras pessoas através do contato físico. Ela pode drenar as forças vitais de seus alvos, deixando-os enfraquecidos, e assimilar temporariamente suas habilidades, conhecimentos e memórias.
-
-                    No entanto, essa habilidade única vem com um fardo. Vampira precisa ter cuidado ao tocar outras pessoas, pois pode absorver sua energia de forma descontrolada, o que pode ser perigoso tanto para ela quanto para os outros. Ela também é atormentada pelo desejo de conexão humana e o medo de prejudicar aqueles que se aproximam dela.</p>
-            </div>
-
-            <img src="src/images/card-wolverine.png" alt="Wolverine" class="personagem-grande">
-
-            <h2 class="nome-personagem" id="nome-personagem">Wolverine</h2>
-            <p class="descricao-personagem" id="descricao-personagem">Wolverine, também conhecido como Logan ou James Howlett, é um mutante com habilidades regenerativas avançadas e um esqueleto revestido de adamantium, um metal praticamente indestrutível. Ele possui garras retráteis afiadas em suas mãos, capazes de cortar praticamente qualquer material.
-
-                Wolverine é conhecido por sua natureza feroz e sua habilidade de cura acelerada, o que o torna quase imortal. Ele é um lutador altamente habilidoso e possui sentidos aguçados, incluindo olfato, visão e audição aprimorados.</p>
-        </selection>
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Ciclope</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Ele tem o poder de disparar rajadas ópticas por um acidente que
+            aconteceu com ele quando criança, mas não consegue controlá-los
+          </p>
+        </div>
+      </section>
     </main>
-
-
-</body>
-
+    <script src="./src/js/index.js"></script>
+  </body>
 </html>
